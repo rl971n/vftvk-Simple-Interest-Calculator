@@ -1,16 +1,77 @@
+<!DOCTYPE html>
+
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <title> Web App - Simple Interest Calculator </title>
+    	<script src="script.js" defer></script>
+    	<link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-        <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+        <article class="mainarticle">
 
-        <button onclick="compute()">Compute</button>
+            <h1>Simple Interest Calculator</h1>
+
+            <section class="mainsection">
+
+                <div>
+
+                    <label for="despositAmount">Amount</label>
+                    <input type="number" class="depositAmount" id="depositAmount">
+
+                </div>
+
+                <div>
+      
+                    <label for="interestRate">Interest Rate</label>
+                    <input type="range" class="rate" id="interestRate" min="1" max="20" step="0.25" value="10.25" onchange="return updateRate()"> 
+                    <span id="rate_val">10.25%</span>
+
+                </div>
+
+                <div>
+      
+                    <label for="numberofYears">No. of Years</label>
+                    <select id="numberofYears">
+            
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                
+                    </select>
+
+                </div>
+
+                <button>Compute Interest</button>
+                <br>
+                
+            </section>
+
+            <section class="resultssection">
+
+                <p id="resultsLine01"></p>
+                <p id="resultsLine02"></p>
+                <p id="resultsLine03"></p>
+                <p id="resultsLine04"></p>
+
+            </section>
+
+            <footer class="mainfooter">
+
+                &#169; Everyone Can Get Rich
+
+            </footer>
+
+        </article>
+
     </body>
+
 </html>

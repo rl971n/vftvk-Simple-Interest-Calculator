@@ -1,4 +1,78 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+
+    background-color:black;
+    font-family:arial;
+    color:white;
+            
+}
+
+h1 {
+
+    font-family:veranda;
+    color:grey;
+    font-size: 20pt;
+    text-align:left;
+    margin-left: .10in;
+        
+}
+
+.mainarticle {
+
+    background-color:white;
+    width: 400px;
+    padding: 10px;
+    border-radius: 25px;
+        
+}
+
+.mainsection {
+
+    display: table;
+    background-color:white;
+    color:black;
+    font-size: 11pt;
+    margin-left: 0.50in;
+    
+            
+}
+
+.mainsection div {
+
+    display:table-row;
+    
+}
+
+.mainsection label, .mainsection input {
+
+    display: table-cell;
+    text-align: left;
+            
+}
+
+.mainsection label {
+
+    padding-right: 0%;
+    padding-bottom: 1em;
+    
+}
+
+p {
+
+    display: inline;
+    color:black;
+    font-size: 11pt;
+    text-align: left;
+    margin-left: 0.50in;
+    
+}
+
+.mainfooter {
+
+    color: black;
+    text-align: left;
+    font-size: 10pt;
+    margin-left: .10in;
+    
+}
 
 
